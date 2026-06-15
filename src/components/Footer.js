@@ -36,13 +36,13 @@ const Footer = ({ setPage }) => {
             <ul>
               <li><a href="mailto:info@morethanonelanguage.org">info@morethanonelanguage.org</a></li>
               <li><a href="tel:07944687049">07944 687049</a></li>
-              <li><a href="https://www.instagram.com/more_than_one_language" target="_blank" rel="noopener">@more_than_one_language</a></li>
+              <li><a href="https://www.instagram.com/more_than_one_language"  rel="noopener">@more_than_one_language</a></li>
             </ul>
             <div style={{marginTop:24}}>
               <h5>Courses</h5>
               <ul>
-                <li><a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle" target="_blank" rel="noopener">Children's Classes</a></li>
-                <li><a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership" target="_blank" rel="noopener">Adult Classes</a></li>
+                <li><a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle"  rel="noopener">Children's Classes</a></li>
+                <li><a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership"  rel="noopener">Adult Classes</a></li>
               </ul>
             </div>
           </div>

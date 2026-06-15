@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/mohayo/more-than-one-language.git/static/js/main.9afd571b.js",
-    "static/media/abi.png": "/mohayo/more-than-one-language.git/static/media/abi.f58448a2a1ed98371d10.png",
-    "index.html": "/mohayo/more-than-one-language.git/index.html",
-    "main.9afd571b.js.map": "/mohayo/more-than-one-language.git/static/js/main.9afd571b.js.map"
+    "main.js": "/more-than-one-language/static/js/main.a6fca13b.js",
+    "static/media/abi.png": "/more-than-one-language/static/media/abi.f58448a2a1ed98371d10.png",
+    "index.html": "/more-than-one-language/index.html",
+    "main.a6fca13b.js.map": "/more-than-one-language/static/js/main.a6fca13b.js.map"
   },
   "entrypoints": [
-    "static/js/main.9afd571b.js"
+    "static/js/main.a6fca13b.js"
   ]
 }

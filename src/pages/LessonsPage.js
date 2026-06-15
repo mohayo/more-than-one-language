@@ -52,7 +52,7 @@ const LessonsPage = ({ setPage }) => {
                 <li>Focus on speaking and listening confidence</li>
                 <li>Term-based progression</li>
               </ul>
-              <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle" target="_blank" rel="noopener" className="btn btn-primary" style={{width:"100%",justifyContent:"center"}}>Enrol Your Child →</a>
+              <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle"  rel="noopener" className="btn btn-primary" style={{width:"100%",justifyContent:"center"}}>Enrol Your Child →</a>
             </div>
 
             {/* Adults */}
@@ -66,7 +66,7 @@ const LessonsPage = ({ setPage }) => {
                 <li>Supportive community of learners</li>
                 <li>Resources for home practice</li>
               </ul>
-              <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership" target="_blank" rel="noopener" className="btn btn-outline" style={{width:"100%",justifyContent:"center",borderColor:T.gold,color:"#7a5c00"}}>Explore Adult Classes →</a>
+              <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership"  rel="noopener" className="btn btn-outline" style={{width:"100%",justifyContent:"center",borderColor:T.gold,color:"#7a5c00"}}>Explore Adult Classes →</a>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@ const LessonsPage = ({ setPage }) => {
         <p>Book a free discovery call to find the right class for you or your child.</p>
         <div className="btn-group">
           <button className="btn btn-gold" onClick={() => go("contact")}>Book a Free Discovery Call</button>
-          <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle" target="_blank" rel="noopener" className="btn" style={{background:"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.3)"}}>Enrol Now →</a>
+          <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle"  rel="noopener" className="btn" style={{background:"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.3)"}}>Enrol Now →</a>
         </div>
       </div>
     </div>

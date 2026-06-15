@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { T } from '../constants/tokens';
 
 const HomePage = ({ setPage }) => {
@@ -36,7 +36,7 @@ const HomePage = ({ setPage }) => {
             </h1>
             <p className="hero-sub">Online Yoruba lessons for children, adults, families, schools and organisations across the UK and beyond.</p>
             <div className="hero-buttons">
-              <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle" target="_blank" rel="noopener" className="btn btn-gold">Join a Yoruba Course →</a>
+              <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle"  rel="noopener" className="btn btn-gold">Join a Yoruba Course →</a>
               <button className="btn btn-outline" style={{color:"white",borderColor:"rgba(255,255,255,0.4)"}} onClick={() => go("contact")}>Book a Free Discovery Call</button>
             </div>
           </div>
@@ -101,8 +101,8 @@ const HomePage = ({ setPage }) => {
         <h2 className="playfair">Ready to Start Your <em style={{color:T.gold,fontStyle:"normal"}}>Yoruba Journey?</em></h2>
         <p>Whether you're a parent, an adult learner, a school, or an organisation — we have a path for you.</p>
         <div className="btn-group">
-          <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle" target="_blank" rel="noopener" className="btn btn-gold">Children's Classes →</a>
-          <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership" target="_blank" rel="noopener" className="btn" style={{background:"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.3)"}}>Adult Classes →</a>
+          <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle"  rel="noopener" className="btn btn-gold">Children's Classes →</a>
+          <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership"  rel="noopener" className="btn" style={{background:"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.3)"}}>Adult Classes →</a>
           <button className="btn" style={{background:"transparent",color:"white",border:"1px solid rgba(255,255,255,0.3)"}} onClick={() => go("consultancy")}>Consultancy Services →</button>
         </div>
       </div>

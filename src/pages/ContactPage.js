@@ -101,7 +101,7 @@ const ContactPage = () => {
                 <div className="contact-info-icon">📸</div>
                 <div>
                   <div className="contact-info-label">Instagram</div>
-                  <div className="contact-info-value"><a href="https://www.instagram.com/more_than_one_language" target="_blank" rel="noopener" style={{color:T.green,textDecoration:"none"}}>@more_than_one_language</a></div>
+                  <div className="contact-info-value"><a href="https://www.instagram.com/more_than_one_language" rel="noopener" style={{color:T.green,textDecoration:"none"}}>@more_than_one_language</a></div>
                 </div>
               </div>
 
@@ -115,8 +115,8 @@ const ContactPage = () => {
                 <h4 className="playfair" style={{fontSize:18,fontWeight:700,color:"#7a5c00",marginBottom:8}}>Ready to Enrol Directly?</h4>
                 <p style={{fontSize:14,color:T.mid,marginBottom:16,lineHeight:1.7}}>Jump straight into one of our courses on the Newzenler platform.</p>
                 <div style={{display:"flex",gap:10,flexWrap:"wrap"}}>
-                  <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle" target="_blank" rel="noopener" className="btn btn-gold" style={{fontSize:13,padding:"10px 18px"}}>Children's Course</a>
-                  <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership" target="_blank" rel="noopener" className="btn btn-outline" style={{fontSize:13,padding:"10px 18px",borderColor:T.gold,color:"#7a5c00"}}>Adult Course</a>
+                  <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle"  rel="noopener" className="btn btn-gold" style={{fontSize:13,padding:"10px 18px"}}>Children's Course</a>
+                  <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership"  rel="noopener" className="btn btn-outline" style={{fontSize:13,padding:"10px 18px",borderColor:T.gold,color:"#7a5c00"}}>Adult Course</a>
                 </div>
               </div>
             </div>
