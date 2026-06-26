@@ -222,7 +222,7 @@ const HomePage = ({ setPage }) => {
       <div className="hero">
         <div className="hero-inner">
           <div>
-            <div className="hero-label">UK-Based Cultural Education &amp; Consultancy</div>
+            {/* <div className="hero-label">UK-Based Cultural Education &amp; Consultancy</div> */}
             <h1 className="hero-title playfair">
               Preserving Language.<br />
               Celebrating <em>Culture.</em><br />
@@ -271,8 +271,8 @@ const HomePage = ({ setPage }) => {
           <div className="section-label" style={{ textAlign: "left" }}>Why It Matters</div>
           <div className="divider" style={{ margin: "15px 0", transformOrigin: "left" }} />
           <h2 className="section-title" style={{ fontSize: "2.8rem", marginBottom: "24px", lineHeight: "1.2", textAlign: "left" }}>
-            The Case for <br />
-            <span className="accent">Cultural Preservation</span>
+            Ensuring <br />
+            <span className="accent">Cultural continuity</span>
           </h2>
           <p className="section-body" style={{ maxWidth: "440px", fontSize: "1.1rem", opacity: 0.85, lineHeight: "1.7", textAlign: "left" }}>
             Culture is not a background detail — it is the foundation of identity, community, and belonging.
@@ -357,7 +357,7 @@ const HomePage = ({ setPage }) => {
         <h2 className="playfair">
           Ready to Work <em style={{ color: goldColor, fontStyle: "normal" }}>With Us?</em>
         </h2>
-        <p>Whether you're a parent, an adult learner, a school, or an organisation — we have a path for you.</p>
+        <p>Whether you're a parent, an adult, an institution, a corporate organisation, or a local authority;  — we have a path for you.</p>
         <div className="btn-group">
           <button className="btn btn-gold" onClick={() => go("consultancy")}>
             Consultancy Services →

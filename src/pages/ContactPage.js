@@ -4,11 +4,32 @@ import { T } from '../constants/tokens';
 const ContactPage = () => {
   const [form, setForm] = useState({ org: "", name: "", phone: "", email: "", service: "", message: "" });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const handle = (e) => setForm(f => ({...f, [e.target.name]: e.target.value}));
-  const submit = () => {
+
+  const submit = async () => {
     if (!form.name || !form.email) return;
-    setSent(true);
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch("https://formspree.io/f/xjgqwrjv", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setSent(true);
+      } else {
+        const data = await res.json();
+        setError(data?.errors?.[0]?.message || "Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Could not send your message. Please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -61,7 +82,7 @@ const ContactPage = () => {
                         <option>Children's Yoruba Classes</option>
                         <option>Adult Yoruba Classes</option>
                         <option>School Consultancy</option>
-                        <option>Organisational Consultancy</option>
+                        <option>Corporate/Organisational Consultancy</option>
                         <option>Local Authority Consultancy</option>
                         <option>University Collaboration / Guest Lecture</option>
                         <option>Speaking Engagement</option>
@@ -73,7 +94,19 @@ const ContactPage = () => {
                       <textarea name="message" placeholder="Tell us a little about your goals..." value={form.message} onChange={handle}/>
                     </div>
                   </div>
-                  <button className="btn btn-primary" style={{marginTop:24,width:"100%",justifyContent:"center"}} onClick={submit}>Send Enquiry →</button>
+                  {error && (
+                    <div style={{marginTop:16,padding:"12px 16px",background:"#fff0f0",border:"1px solid #f5c6c6",borderRadius:8,fontSize:14,color:"#c0392b"}}>
+                      {error}
+                    </div>
+                  )}
+                  <button
+                    className="btn btn-primary"
+                    style={{marginTop:24,width:"100%",justifyContent:"center",opacity:loading?0.7:1,cursor:loading?"not-allowed":"pointer"}}
+                    onClick={submit}
+                    disabled={loading}
+                  >
+                    {loading ? "Sending…" : "Send Enquiry →"}
+                  </button>
                 </div>
               )}
             </div>
@@ -115,8 +148,8 @@ const ContactPage = () => {
                 <h4 className="playfair" style={{fontSize:18,fontWeight:700,color:"#7a5c00",marginBottom:8}}>Ready to Enrol Directly?</h4>
                 <p style={{fontSize:14,color:T.mid,marginBottom:16,lineHeight:1.7}}>Jump straight into one of our courses on the Newzenler platform.</p>
                 <div style={{display:"flex",gap:10,flexWrap:"wrap"}}>
-                  <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle"  rel="noopener" className="btn btn-gold" style={{fontSize:13,padding:"10px 18px"}}>Children's Course</a>
-                  <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership"  rel="noopener" className="btn btn-outline" style={{fontSize:13,padding:"10px 18px",borderColor:T.gold,color:"#7a5c00"}}>Adult Course</a>
+                  <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle" rel="noopener" className="btn btn-gold" style={{fontSize:13,padding:"10px 18px"}}>Children's Course</a>
+                  <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership" rel="noopener" className="btn btn-outline" style={{fontSize:13,padding:"10px 18px",borderColor:T.gold,color:"#7a5c00"}}>Adult Course</a>
                 </div>
               </div>
             </div>

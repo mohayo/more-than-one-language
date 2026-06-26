@@ -73,7 +73,7 @@ const LessonsPage = ({ setPage }) => {
               <ul className="lesson-features">
                 <li>Small group sizes for maximum engagement</li>
                 <li>Age-appropriate curriculum</li>
-                <li>Focus on speaking and listening confidence</li>
+                <li>Focus on speaking, listening and writing confidence</li>
                 <li>Term-based progression</li>
               </ul>
               <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle"  rel="noopener" className="btn btn-primary" style={{width:"100%",justifyContent:"center"}}>Enrol Your Child →</a>
@@ -85,9 +85,9 @@ const LessonsPage = ({ setPage }) => {
               <h3>Yoruba for Adults</h3>
               <p>Tailored for beginners and returners who want to reclaim their heritage language or support their children's learning.</p>
               <ul className="lesson-features">
-                <li>Flexible online membership</li>
+                <li>Flexible online classes</li>
                 <li>Practical conversational focus</li>
-                <li>Supportive community of learners</li>
+                <li>Supportive teaching</li>
                 <li>Resources for home practice</li>
               </ul>
               <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership"  rel="noopener" className="btn btn-outline" style={{width:"100%",justifyContent:"center",borderColor:T.gold,color:"#7a5c00"}}>Explore Adult Classes →</a>

@@ -41,16 +41,18 @@ const AboutPage = ({ setPage }) => {
               My journey began in 2002, when I moved from Nigeria to the United Kingdom. As a Yoruba teenager, I experienced culture shock first-hand and understood the challenges of adapting to a very different way of life.              </p>
 
               <p className="section-body" style={{ marginBottom: 20, maxWidth: "100%" }}>
-              I also saw that many Nigerian children born in the UK, or growing up in other countries, could not speak Yoruba. Some who could speak it chose not to, and many parents found it difficult to encourage their children to use the language. In many cases, English or the dominant local language was seen as more fashionable.              </p>
-              <p className="section-body" style={{ marginBottom: 20, maxWidth: "100%" }}>
-                That experience inspired me to promote Yoruba language and bilingualism among children in migrant families — and to help parents see the value of raising children who can embrace more than one culture.
-              </p>
-              <p className="section-body" style={{ marginBottom: 20, maxWidth: "100%" }}>
+              I also saw that many Nigerian children born in the UK, or growing up in other countries, could not speak Yoruba. Some who could speak it chose not to, and many parents found it difficult to encourage their children to use the language. In many cases, English was seen as more fashionable. 
+               </p>
+               <p className="section-body" style={{ marginBottom: 20, maxWidth: "100%" }}>
                 When I had my first child in 2014, I made a conscious decision to teach him Yoruba from an early age. Now, as a mother of two, my sons aged 12 and 8 speak both English and Yoruba fluently and confidently, despite being born and raised in the UK.
               </p>
-              <p className="section-body" style={{ maxWidth: "100%" }}>
-                I am passionate about sharing my knowledge and practical teaching strategies to support you on this journey. Through my virtual Yoruba classes, I aim to help grow a global community of proud, confident Yoruba speakers.
+              <p className="section-body" style={{ marginBottom: 20, maxWidth: "100%" }}>
+                That experience inspired me to promote Yoruba language and bilingualism among children in families and communities. This hopes to help Families, communities, and organisations understand the importance of Celebrating more that one language and culture. 
               </p>
+      
+             {/*  <p className="section-body" style={{ maxWidth: "100%" }}>
+                I am passionate about sharing my knowledge and practical teaching strategies to support you on this journey. Through my virtual Yoruba classes, I aim to help grow a global community of proud, confident Yoruba speakers.
+              </p> */}
 
               <div style={{ marginTop: 36, display: "flex", flexWrap: "wrap", gap: 10 }}>
                 <button className="btn btn-primary" style={{ fontSize: "clamp(0.75rem, 2vw, 0.95rem)", padding: "10px 16px", whiteSpace: "nowrap" }} onClick={() => go("lessons")}>Explore Our Lessons →</button>

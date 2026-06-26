@@ -115,9 +115,9 @@ const Nav = ({ page, setPage }) => {
 
   const pages = [
     { id: "home",        label: "Home" },
+    { id: "about",       label: "About" },
     { id: "consultancy", label: "Consultancy" },
     { id: "lessons",     label: "Yoruba Lessons" },
-    { id: "about",       label: "About" },
     { id: "contact",     label: "Contact" },
   ];
 

@@ -6,18 +6,22 @@ const ConsultancyPage = ({ setPage }) => {
   const go = (id) => { setPage(id); window.scrollTo(0,0); };
 
   const services = {
-    "Schools": {
-      desc: "Supporting schools to embed heritage language and cultural identity into the fabric of education.",
-      items: ["Curriculum development", "Heritage language programmes", "Teacher training", "Interactive workshops", "After-school programmes", "Cultural enrichment activities"]
+
+    " Corporate Organisations": {
+      desc: "Building cultural competency within organisations so teams can engage meaningfully with diverse communities.",
+      items: ["Employee cultural competency training", "Community outreach strategies", "Improved communication strategies", "Culturally inclusive initiatives", "Inclusion audits", "Staff awareness workshops"]
     },
+
     "Local Authorities": {
       desc: "Helping local authorities create truly inclusive programmes that reflect the communities they serve.",
       items: ["Community engagement programmes", "Cultural inclusion projects", "Representation initiatives", "Accessibility improvements", "Community outreach strategies", "Diversity reporting support"]
     },
-    "Organisations": {
-      desc: "Building cultural competency within organisations so teams can engage meaningfully with diverse communities.",
-      items: ["Employee cultural competency training", "Community outreach strategies", "Improved communication strategies", "Culturally inclusive initiatives", "Inclusion audits", "Staff awareness workshops"]
+
+    "Schools": {
+      desc: "Supporting schools to embed heritage language and cultural identity into the fabric of education.",
+      items: ["Curriculum development", "Heritage language programmes", "Teacher training", "Interactive workshops", "After-school programmes", "Cultural enrichment activities"]
     },
+   
     "Universities": {
       desc: "Collaborating with higher education institutions on research, lectures, and cultural programming.",
       items: ["Guest lectures", "Research collaborations", "Cultural programmes", "Student awareness events", "Heritage language research", "Community partnerships"]
@@ -25,7 +29,7 @@ const ConsultancyPage = ({ setPage }) => {
   };
 
   const outcomes = [
-    { icon: "📈", label: "Improved organisational & student engagement" },
+    { icon: "📈", label: "Improved organisational engagement" },
     { icon: "🧩", label: "Stronger cultural competency across teams" },
     { icon: "🤲", label: "Better stakeholder relationships" },
     { icon: "🏛️", label: "More inclusive programmes" },
@@ -120,7 +124,7 @@ const ConsultancyPage = ({ setPage }) => {
       {/* CTA */}
       <div className="cta-banner">
         <h2 className="playfair">Let's Build Something <em style={{color:T.gold,fontStyle:"normal"}}>Meaningful Together</em></h2>
-        <p>Get in touch to discuss how we can support your organisation, school, or institution.</p>
+        <p>Get in touch to discuss how we can support your organisation, local authority, school, or university.</p>
         <div className="btn-group">
           <button className="btn btn-gold" onClick={() => go("contact")}>Make an Enquiry →</button>
         </div>
