@@ -357,7 +357,7 @@ const HomePage = ({ setPage }) => {
         <h2 className="playfair">
           Ready to Work <em style={{ color: goldColor, fontStyle: "normal" }}>With Us?</em>
         </h2>
-        <p>Whether you're a parent, an adult, an institution, a corporate organisation, or a local authority;  — we have a path for you.</p>
+        <p>Whether you're a parent, an adult, an institution, a corporate organisation, or a local authority,  — we have a path for you.</p>
         <div className="btn-group">
           <button className="btn btn-gold" onClick={() => go("consultancy")}>
             Consultancy Services →

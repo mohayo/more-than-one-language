@@ -47,7 +47,7 @@ const AboutPage = ({ setPage }) => {
                 When I had my first child in 2014, I made a conscious decision to teach him Yoruba from an early age. Now, as a mother of two, my sons aged 12 and 8 speak both English and Yoruba fluently and confidently, despite being born and raised in the UK.
               </p>
               <p className="section-body" style={{ marginBottom: 20, maxWidth: "100%" }}>
-                That experience inspired me to promote Yoruba language and bilingualism among children in families and communities. This hopes to help Families, communities, and organisations understand the importance of Celebrating more that one language and culture. 
+                That experience inspired me to promote Yoruba language and bilingualism among children in families and communities. This hopes to help Families, communities, and organisations understand the importance of celebrating more that one language and culture. 
               </p>
       
              {/*  <p className="section-body" style={{ maxWidth: "100%" }}>

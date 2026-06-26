@@ -146,7 +146,7 @@ const ContactPage = () => {
 
               <div style={{background:T.goldLight,border:`1px solid #e8d5a0`,borderRadius:16,padding:28,marginTop:16}}>
                 <h4 className="playfair" style={{fontSize:18,fontWeight:700,color:"#7a5c00",marginBottom:8}}>Ready to Enrol Directly?</h4>
-                <p style={{fontSize:14,color:T.mid,marginBottom:16,lineHeight:1.7}}>Jump straight into one of our courses on the Newzenler platform.</p>
+                <p style={{fontSize:14,color:T.mid,marginBottom:16,lineHeight:1.7}}>Jump straight into one of our courses.</p>
                 <div style={{display:"flex",gap:10,flexWrap:"wrap"}}>
                   <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle" rel="noopener" className="btn btn-gold" style={{fontSize:13,padding:"10px 18px"}}>Children's Course</a>
                   <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-for-adult-membership" rel="noopener" className="btn btn-outline" style={{fontSize:13,padding:"10px 18px",borderColor:T.gold,color:"#7a5c00"}}>Adult Course</a>
