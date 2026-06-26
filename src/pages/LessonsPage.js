@@ -19,20 +19,44 @@ const LessonsPage = ({ setPage }) => {
     { name: "Adéọlá", meaning: "The crown of wealth" },
   ];
 
+  const countries = ["🇬🇧 UK", "🇺🇸 USA", "🇨🇦 Canada", "🇦🇺 Australia", "🇫🇷 France", "🇩🇪 Germany"];
+
   return (
     <div className="page">
       {/* Hero banner */}
-      <div style={{background: `linear-gradient(135deg, ${T.greenDark}, ${T.green})`, padding:"64px 24px"}}>
-        <div style={{maxWidth:1120,margin:"0 auto"}}>
-          <div style={{fontSize:12,fontWeight:600,letterSpacing:"3px",textTransform:"uppercase",color:"rgba(255,255,255,0.6)",marginBottom:16}}>Learn Yoruba</div>
-          <h1 className="playfair" style={{fontSize:"clamp(32px,5vw,56px)",fontWeight:900,color:"white",lineHeight:1.15,marginBottom:16}}>
-            Connect with Your Heritage.<br/><span style={{color:T.gold}}>Build Cultural Confidence.</span>
-          </h1>
-          <p style={{fontSize:17,color:"rgba(255,255,255,0.85)",maxWidth:600,lineHeight:1.75}}>
-            We offer structured, engaging, and culturally rich Yoruba lessons designed specifically for the diaspora experience.
-          </p>
+
+              <div style={{background: `linear-gradient(135deg, ${T.greenDark}, ${T.green})`, padding:"64px 24px"}}>
+          <div style={{maxWidth:1120, margin:"0 auto", display:"flex", gap:40, alignItems:"center"}}>
+            
+            <div style={{flex:6}}>
+              <div style={{fontSize:12,fontWeight:600,letterSpacing:"3px",textTransform:"uppercase",color:"rgba(255,255,255,0.6)",marginBottom:16}}>Learn Yoruba</div>
+              <h1 className="playfair" style={{fontSize:"clamp(32px,5vw,56px)",fontWeight:900,color:"white",lineHeight:1.15,marginBottom:16}}>
+                Connect with Your Heritage.<br/><span style={{color:T.gold}}>Build Cultural Confidence.</span>
+              </h1>
+              <p style={{fontSize:17,color:"rgba(255,255,255,0.85)",maxWidth:600,lineHeight:1.75}}>
+              Online Yoruba lessons for children, adults, families, schools and organisations across the UK and beyond.              </p>
+            </div>
+
+            <div style={{flex:4}} className="hero-card">
+              <div className="hero-card-title">Our Reach So Far</div>
+              <div className="stat-row">
+                <div className="stat">
+                  <div className="stat-num">98+</div>
+                  <div className="stat-lbl">Complete beginners taught</div>
+                </div>
+                <div className="stat">
+                  <div className="stat-num">6</div>
+                  <div className="stat-lbl">Countries served globally</div>
+                </div>
+              </div>
+              <div style={{fontSize:12,color:"rgba(255,255,255,0.55)",marginBottom:10,textTransform:"uppercase",letterSpacing:"1.5px",fontWeight:600}}>Students from</div>
+              <div className="flag-list">
+                {countries.map(c => <span key={c} className="flag-chip">{c}</span>)}
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
 
       {/* Classes */}
       <div className="section bg-white">
@@ -109,7 +133,7 @@ const LessonsPage = ({ setPage }) => {
         <p>Book a free discovery call to find the right class for you or your child.</p>
         <div className="btn-group">
           <button className="btn btn-gold" onClick={() => go("contact")}>Book a Free Discovery Call</button>
-          <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle"  rel="noopener" className="btn" style={{background:"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.3)"}}>Enrol Now →</a>
+          <a href="https://yoruba-language-circle.newzenler.com/courses/yoruba-language-circle"  rel="noopener" className="btn" style={{background:"rgba(255,255,255,0.15)",color:"white",border:"1px solid rgba(255,255,255,0.3)"}}>Join the Next Yoruba Course →</a>
         </div>
       </div>
     </div>

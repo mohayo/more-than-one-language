@@ -8,6 +8,7 @@ import LessonsPage from './pages/LessonsPage';
 import ConsultancyPage from './pages/ConsultancyPage';
 import ContactPage from './pages/ContactPage';
 
+
 export default function App() {
   const [page, setPage] = useState("home");
 
